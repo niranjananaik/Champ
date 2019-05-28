@@ -1,0 +1,113 @@
+self study topics- undo in git
+reset and revert, ammend (only recent commit changes bt ammend)
+rebase in git
+git tag
+git stash
+fetch vs pull
+
+
+$ git config --global user.name "niranjana" 
+
+$ git config --global user.email "niranjana_naik@persistent.com"
+
+git config user.name
+
+git config user.email
+
+
+git config --global core.editor notepad
+
+
+git init (creates git repository(once))
+
+
+git status (checks status)
+
+git add File1.txt (adds file to staging area)
+//it also accepts regular expressions e.g. *.java, .(current directory-all)
+
+
+git commit -m "File1.txt is created with initial one statement" (commits file to repository)
+//message here should be specific
+
+
+git commit -am "change2 in file 1" (adds and commits the file without having to add it in staging area)
+
+
+git log (how many commits have been made)
+
+git log --oneline (simply shows all the commits have been made)
+
+git log --oneline -2 (gives last 2 commits)
+
+git log --author="niranjana" (search logs by author)
+//since, until, by file, by change is possible
+
+git log --author="niranjana" -2 (last 2 commits made by this author)
+
+git log --since="11/05/2018" (date is in mm/dd/yyyy format)
+
+git log --grep="File1" (search commits by message)
+
+
+git diff (shows difference, what changes have been made)
+
+
+git log --help (opens docs)
+
+
+git checkout 12889c9 (kinda like undo)
+
+----------------------------------------------------------------------
+git branch (shows all branches)
+
+git branch bug123 (creates bug123 branch)
+
+git merge bug123 (merges two branches, if you are on another branch, go to master first and then merge it with master)
+
+git branch -d bug123 (deletes a branch, safe delete, it won't allow us to delete the branch if we have commits on that branch)
+
+git branch -D bug123 (force delete, though we have commits on this branch, it will delete it)
+
+git checkout -b idea (create and switch to the new branch)
+
+
+when we try to make same changes in two branches, and commit them and when we 
+try to merge them conflict occurs. And we must resolve the conflict.
+
+
+git log --oneline --graph --decorate (log in a nice way)
+
+
+-------------------------------------------------------------------------------
+
+remote repository
+
+GitHub 
+
+repsitory name is project name usually
+
+https://github.com/niranjananaik/ML_AI.git
+
+git remote (shows remote respositories)
+
+git remote -v (to push entire repository, do it only once)
+
+git push -u origin master (to push from master to origin)
+//but origin is your local master
+
+git pull (to take changes from remote to pull)
+(git pull origin master)(here origin is source, master is destination)
+
+never push anything directly. if someone has already pushed the same thing there will be conflict.
+before pushing, always pull and then push
+
+
+
+
+
+
+
+
+
+
