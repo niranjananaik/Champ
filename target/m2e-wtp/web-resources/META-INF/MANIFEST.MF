@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: TestWebhooks Maven Webapp
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: niranjana_naik
+Implementation-Vendor-Id: com.psl
+Build-Jdk: 1.8.0_181
+Implementation-URL: http://maven.apache.org
+Created-By: Maven Integration for Eclipse
+
